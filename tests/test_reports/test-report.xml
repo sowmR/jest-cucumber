@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="1" errors="0" time="25.199">
+  <testsuite name="featurename" errors="0" failures="1" skipped="0" timestamp="2021-02-01T13:59:29" time="12.366" tests="5">
+    <testcase classname="featurename" name="featurename;scenario1" time="0.032">
+    </testcase>
+    <testcase classname="featurename" name="featurename;scenario1" time="0.003">
+    </testcase>
+    <testcase classname="featurename" name="featurename;scenario1" time="0.001">
+    </testcase>
+    <testcase classname="featurename" name="featurename;scenario2" time="0.001">
+    </testcase>
+    <testcase classname="featurename" name="featurename;scenario3 to fail" time="0.006">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 4
+Received: 5
+    at Object.stepFunction (D:\TestingTools\jest-cucumber\tests\step-definitions\sum.steps.ts:45:28)
+    at D:\TestingTools\jest-cucumber\node_modules\jest-cucumber\src\feature-definition-creation.ts:134:65</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
