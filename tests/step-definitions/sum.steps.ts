@@ -10,7 +10,7 @@ defineFeature(feature, (test) => {
     beforeEach(() => {
         result = 0;
     });
-    test('scenario1', ({ given, when, then }) => {
+    test('Scenario1', ({ given, when, then }) => {
         given('I want o add two numbers', ()=>{
             
         });
@@ -26,13 +26,23 @@ defineFeature(feature, (test) => {
             expect(result.toString()).toBe(answer);
         });
     });
-    test('scenario2', ({ given, when, then }) => {
+    test('Scenario2', ({ given, when, then }) => {
         given('I have two numbers', ()=>{});
         when('when add function is called with 2 and 3',function(){
             result = add2Numbers(2,3);
         });
         then('I should be return 5',()=>{
             expect(result).toBe(5);
+        });
+    });
+    test('Scenario3 to fail', ({ given, when,and, then }) => {
+        given('I have two numbers', ()=>{});
+        when('when add function is called with 2, 3',function(){
+            result = add2Numbers(2,3);
+        });
+        and('check for the result as 4',()=>{})
+        then('the check fails',()=>{
+            expect(result).toBe(4);
         });
     });
   });
